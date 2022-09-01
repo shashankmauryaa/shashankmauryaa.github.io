@@ -1,12 +1,172 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lab4</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <script>
+        function AlertMessage(){
+            alert("Welcome to events!");
+            alert("This is the part of JavaScript");
+        }
+        function MySystemDate(){
+            document.getElementById("demo1").innerHTML=Date();
+        }
+        function MySystemTime(){
+            document.getElementById("demo2").innerHTML=TimeRanges();
+        }
+    </script>
+    <p>Click on the button to get an alert</p>
+    <button onclick="AlertMessage()">PRESS HERE</button>
+    <p id="demo1">Click below to view system date</p>
+    <button  onclick="MySystemDate()">PRESS HERE</button>
+    <p id="demo2">Click below to view time ranges</p>
+    <button ondblclick="MySystemTime()">PRESS HERE</button>
 </body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>lab4</title>
+ </head>
+ <body>
+    <p id="demo">select a new car</p>
+    <select id="mySelect" onchange="myFunction()">
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="Mercedes">Mercedes</option>
+    </select>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML="You selected: "+x;
+        }
+    </script>
+ </body>
+ </html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab4</title>
+</head>
+<body style="text-align:center">
+    <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="download.png" width="320px" height="100px">
+    <script>
+        function largePic(x){
+            x.style.width="960px";
+            x.style.height="300px";
+        }
+        function normPic(x){
+            x.style.width="320px";
+            x.style.height="100px";
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- Create an account in GitHub (Gmail/Outlook)
+Design a webpage (div element, contents are center-aligned) containing the following:
+a) your name, reg no using alert  events
+b) picture of your favourite person using onmouseover and onmouseout events. also, display the name using the same effect
+c) official email address in a CSS box model -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab4</title>
+    <link rel="stylesheet" href="lab2.css">
+</head>
+<body style="text-align:center">
+    <script>
+        function AlertMessage(){
+            alert("tere bhai ka nam kya hai: nam 47 hai");
+            alert("Registration number: 202000463");
+        }
+        function MySystemDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+    <p>Click on the button below to get info</p>
+    <button id="p" onclick="AlertMessage()">PRESS HERE</button>
+    <p id="demo">Click below to view system date</p>
+    <button ondblclick="MySystemDate()">PRESS HERE</button><br><br>
+    <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="download.png" width="100px" height="100px">
+    <p onmouseover="largeTxt(this)" onmouseout="normTxt(this)">Shashank Maurya</p>
+    <script>
+        function largePic(x){
+            x.style.width="300px";
+            x.style.height="300px";
+        }
+        function normPic(x){
+            x.style.width="100px";
+            x.style.height="100px";
+        }
+        function largeTxt(x){
+            x.style.fonstSize = "150%";
+        }
+        function normTxt(x){
+            x.style.fonstSize = "100%";
+        }
+    </script>
+    <div class="footer">
+        <div class="details">
+            <em>© shashank_202000463@smit.smu.edu.in</em>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab4</title>
+        <link rel="stylesheet" href="lab2.css">
+    </head>
+    <body>
+        <div class="top-section">
+            <div class="heading">
+                <h1>LAB ASSIGNMENT 4</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="middle-area">
+                <h2>Click below for details:</h2>
+                <button id="p" onclick="AlertMessage()">CLICK HERE</button>
+                <br><br>
+                <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="download.png" width="100px" height="100px">
+                <h3 onmouseover="largeTxt(this)" onmouseout="normTxt(this)"><b>shashank</b></h3>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="details">
+                <em>© shashank_202000463@smit.smu.edu.in</em>
+            </div>
+        </div>
+        <script>
+            function AlertMessage(){
+                alert("Name: Shashank Maurya");
+                alert("Registration number: 202000463");
+            }
+        </script>
+        <script>
+            function largePic(x){
+                x.style.width="300px";
+                x.style.height="300px";
+            }
+            function normPic(x){
+                x.style.width="100px";
+                x.style.height="100px";
+            }
+            function largeTxt(x){
+                x.style.fontSize = "300%";
+            }
+            function normTxt(x){
+                x.style.fontSize = "100%";
+            }
+        </script>
+    </body>
 </html>
